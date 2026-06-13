@@ -5,9 +5,9 @@ from pathlib import Path
 
 
 PUBLIEKSLAAG_ROOT = Path(__file__).resolve().parent
-ROOT_CONTENT = PUBLIEKSLAAG_ROOT / "content" / "maker-manuals.md"
+ROOT_CONTENT = PUBLIEKSLAAG_ROOT / "reeks-content" / "maker-manuals.md"
 BOOK_DIRS = [
-    "maker-manual-01",
+    "maker-manual-01-vibecoding",
     "maker-manual-02-ai-os",
     "maker-manual-03-ai-bedrijf",
     "maker-manual-04-ai-autonomie",

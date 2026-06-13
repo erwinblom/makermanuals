@@ -7,7 +7,7 @@ Dit is de schone publicatiemap voor de `Maker Manuals`-reeks.
 De bronlaag van de manuals zit verspreid over:
 
 - `maker-manuals/`
-- `maker-manual-01/`
+- `maker-manual-01-vibecoding/`
 - `maker-manual-02-ai-os/`
 - `maker-manual-03-ai-bedrijf/`
 - `maker-manual-04-ai-autonomie/`

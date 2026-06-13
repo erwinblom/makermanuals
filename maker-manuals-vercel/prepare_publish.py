@@ -16,7 +16,7 @@ HUB_SOURCE = SOURCE_ROOT / "maker-manuals"
 BOOKS = [
     {
         "slug": "vibecoding",
-        "source": SOURCE_ROOT / "maker-manual-01",
+        "source": SOURCE_ROOT / "maker-manual-01-vibecoding",
         "pdf": "maker-manual-01-vibecoding.pdf",
         "epub": "maker-manual-01-vibecoding.epub",
     },
@@ -64,10 +64,10 @@ def build_hub() -> None:
     html = (ROOT / "index.html").read_text()
     replacements = {
         "../index.html": "./index.html",
-        "../maker-manual-01/site/index.html": "./vibecoding/",
-        "../maker-manual-01/site/book.html": "./vibecoding/book/",
-        "../maker-manual-01/exports/maker-manual-01-vibecoding.pdf": "./downloads/maker-manual-01-vibecoding.pdf",
-        "../maker-manual-01/exports/maker-manual-01-vibecoding.epub": "./downloads/maker-manual-01-vibecoding.epub",
+        "../maker-manual-01-vibecoding/site/index.html": "./vibecoding/",
+        "../maker-manual-01-vibecoding/site/book.html": "./vibecoding/book/",
+        "../maker-manual-01-vibecoding/exports/maker-manual-01-vibecoding.pdf": "./downloads/maker-manual-01-vibecoding.pdf",
+        "../maker-manual-01-vibecoding/exports/maker-manual-01-vibecoding.epub": "./downloads/maker-manual-01-vibecoding.epub",
         "../maker-manual-02-ai-os/site/index.html": "./ai-os/",
         "../maker-manual-02-ai-os/site/book.html": "./ai-os/book/",
         "../maker-manual-02-ai-os/exports/maker-manual-02-ai-os.pdf": "./downloads/maker-manual-02-ai-os.pdf",

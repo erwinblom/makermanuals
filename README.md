@@ -13,11 +13,11 @@ Wil je de reeks verkennen of gewoon lezen? Begin dan hier:
 ## Wat je hier vindt
 
 - `maker-manuals/` - de centrale publieksingang van de reeks
-- `maker-manual-01/` - `Vibecoding`
+- `maker-manual-01-vibecoding/` - `Vibecoding`
 - `maker-manual-02-ai-os/` - `AI-OS`
 - `maker-manual-03-ai-bedrijf/` - `Het AI-bedrijf`
 - `maker-manual-04-ai-autonomie/` - `AI-autonomie`
-- `maker-manuals-publish/` - de Vercel-publicatielaag
+- `maker-manuals-vercel/` - de Vercel-publicatielaag
 - `index.html` en `home.css` - de bovenliggende publieksingang
 
 ## Voor wie dit is
@@ -30,8 +30,8 @@ Dit deel is voor wie aan de inhoud of publicatielaag werkt.
 
 ### Waar pas je teksten aan
 
-- Overkoepelende reeks-pagina: `content/maker-manuals.md`
-- Boek-overzichtspagina per manual: `maker-manual-01/content.md` tot en met `maker-manual-04-ai-autonomie/content.md`
+- Overkoepelende reeks-pagina: `reeks-content/maker-manuals.md`
+- Boek-overzichtspagina per manual: `maker-manual-01-vibecoding/content.md` tot en met `maker-manual-04-ai-autonomie/content.md`
 - Lopende boektekst zelf: het markdownbestand in `manuscript/`
 
 De markdownbestanden zijn nu expres menselijk opgezet, met gewone secties als:
@@ -47,7 +47,7 @@ De markdownbestanden zijn nu expres menselijk opgezet, met gewone secties als:
 
 - Alleen de reeks-pagina: `python3 maker-manuals/build_page.py`
 - Een boekpagina en de gekoppelde reeks-kaart: draai het bestaande `site/build_site.py` in die boekmap
-- Publicatielaag verversen: `python3 maker-manuals-publish/prepare_publish.py`
+- Publicatielaag verversen: `python3 maker-manuals-vercel/prepare_publish.py`
 
 ### Werkwijze
 
