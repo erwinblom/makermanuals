@@ -1,0 +1,286 @@
+:root {
+  --paper: #fff8e8;
+  --ink: #101010;
+  --yellow: #f5e642;
+  --red: #ff5b42;
+  --mint: #63e6be;
+  --blue: #77a7ff;
+  --line: 5px solid var(--ink);
+  --shadow: 9px 9px 0 var(--ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.shell {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.hero,
+.layer,
+.extra {
+  border: var(--line);
+  box-shadow: var(--shadow);
+  background: #fffdf5;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 24px;
+  min-height: 360px;
+  padding: 30px;
+  margin-bottom: 24px;
+  background:
+    linear-gradient(90deg, transparent 0 74%, var(--yellow) 74%),
+    #fffdf5;
+}
+
+.stamp {
+  display: inline-block;
+  margin: 0 0 18px;
+  padding: 9px 13px;
+  border: 4px solid var(--ink);
+  background: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: clamp(58px, 9vw, 118px);
+  line-height: 0.84;
+  text-transform: uppercase;
+}
+
+.claim {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px;
+  border: 4px solid var(--ink);
+  background: var(--mint);
+}
+
+.claim strong {
+  font-size: 34px;
+  line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.claim span {
+  font-size: 17px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.layers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.layer {
+  min-height: 620px;
+  color: var(--ink);
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+
+.layer-copy {
+  padding: 22px;
+}
+
+.layer-copy span {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 18px;
+  border: 4px solid var(--ink);
+  background: var(--yellow);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.werken .layer-copy span {
+  background: var(--mint);
+}
+
+.maken .layer-copy span {
+  background: var(--red);
+}
+
+.layer h2 {
+  margin-bottom: 12px;
+  font-size: 54px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.layer p {
+  min-height: 74px;
+  margin-bottom: 18px;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
+}
+
+.layer strong {
+  display: inline-block;
+  padding: 10px 12px;
+  border: 4px solid var(--ink);
+  background: var(--yellow);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.werken strong {
+  background: var(--mint);
+}
+
+.maken strong {
+  background: var(--red);
+}
+
+.layer img {
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  object-fit: cover;
+  object-position: left top;
+  border-top: 5px solid var(--ink);
+  filter: saturate(0.95) contrast(1.03);
+}
+
+.layer:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+  padding: 22px;
+  background: var(--ink);
+  color: #fffdf5;
+}
+
+.extra h2 {
+  margin-bottom: 4px;
+  color: var(--yellow);
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.extra p {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.extra a {
+  flex: 0 0 auto;
+  padding: 14px 18px;
+  border: 4px solid #fffdf5;
+  background: var(--yellow);
+  color: var(--ink);
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.maker-manuals-link {
+  margin-top: 24px;
+  background: var(--blue);
+  color: var(--ink);
+}
+
+.maker-manuals-link h2 {
+  color: var(--yellow);
+}
+
+.maker-manuals-link a {
+  border-color: var(--ink);
+}
+
+@media (max-width: 1050px) {
+  .hero,
+  .layers {
+    grid-template-columns: 1fr;
+  }
+
+  .claim {
+    min-height: 180px;
+  }
+
+  .layer {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --shadow: 3px 3px 0 var(--ink);
+  }
+
+  .shell {
+    width: calc(100vw - 28px);
+    padding: 12px 0;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding: 22px;
+    background: #fffdf5;
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+
+  .claim strong {
+    font-size: 25px;
+  }
+
+  .layer h2 {
+    font-size: 44px;
+  }
+
+  .layer-copy {
+    padding: 20px;
+  }
+
+  .layer p {
+    min-height: 0;
+    font-size: 19px;
+  }
+
+  .extra {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

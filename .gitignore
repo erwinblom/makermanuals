@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+
+# Niet onderdeel van de Maker Manuals-repo
+2026-06-13-ai-schrijfwerkbank-readme-concept.md
+2026-06-13-github-profiel-en-publieke-repo-opzet.md
+2026-06-13-github-profiel-readme-concept.md
+ai-werkcheck/
+blom-os-live-map-7ws.md
+blom-os-live-map-slide.md
+home-desktop.png
+home-mobile.png
+live-map/
+
+# Lokale Vercel metadata
+maker-manuals-publish/.vercel/

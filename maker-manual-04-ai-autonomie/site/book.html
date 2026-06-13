@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI-autonomie</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="book-body">
+    <main class="book-shell">
+      <a class="back-link" href="../../maker-manuals/index.html">Terug naar Maker Manuals</a>
+      <aside class="book-side">
+        <p class="eyebrow">Maker Manuals 04</p>
+        <h1>AI-autonomie</h1>
+        <p class="side-summary">Onafhankelijk blijven in een wereld vol modellen, platforms en AI-tools.</p>
+        <div class="side-box">
+          <strong>Formaat</strong>
+          <span>Webeditie in neo brutalism-stijl</span>
+        </div>
+        <div class="side-box">
+          <strong>Licentie</strong>
+          <span>CC BY-SA 4.0</span>
+        </div>
+        <div class="side-box">
+          <strong>Status</strong>
+          <span>Alpha-editie 0.4</span>
+        </div>
+      </aside>
+      <article class="book-article">
+        <h1 id="ai-autonomie">AI-autonomie</h1>
+<p><code>Maker Manuals 04</code></p>
+<p><code>Onafhankelijk blijven in een wereld vol modellen, platforms en AI-tools</code></p>
+<p><code>Alpha-editie 0.4 - vroege versie in ontwikkeling</code></p>
+<p>Dit boek is bewust een werk in uitvoering: geen eindpunt, maar een versie die beter wordt terwijl het onderwerp beweegt.</p>
+<p>Gebaseerd op de nieuwsbrieven van Erwin Blom, met hulp van AI in een Maker Manual omgezet.</p>
+<p>Deze tekst is beschikbaar onder de Creative Commons-licentie <code>CC BY-SA 4.0</code>.</p>
+<p>Dat betekent: je mag deze tekst delen en bewerken, ook commercieel, zolang je Erwin Blom als bron noemt en afgeleide versies onder dezelfde licentie verspreidt.</p>
+<h2 id="inhoud">Inhoud</h2>
+<ol>
+<li>Hoofdstuk 1. Waarom AI-autonomie ineens belangrijk is</li>
+<li>Hoofdstuk 2. De nieuwe afhankelijkheid</li>
+<li>Hoofdstuk 3. Bouw je eigen laag boven de modellen</li>
+<li>Hoofdstuk 4. Waarom chats geen geheugen mogen zijn</li>
+<li>Hoofdstuk 5. Bestanden, formats en markdown als machtsmiddel</li>
+<li>Hoofdstuk 6. Werken met meerdere modellen zonder gek te worden</li>
+<li>Hoofdstuk 7. Wat houd je zelf, wat huur je in</li>
+<li>Hoofdstuk 8. Je playbooks en kwaliteitslat vastleggen</li>
+<li>Hoofdstuk 9. Bouw een klein maar sterk model-onafhankelijk systeem</li>
+<li>Hoofdstuk 10. Onafhankelijk genoeg is beter dan volledig autonoom</li>
+</ol>
+<h1 id="hoofdstuk-1-waarom-ai-autonomie-ineens-belangrijk-is">Hoofdstuk 1. Waarom AI-autonomie ineens belangrijk is</h1>
+<p>De meeste mensen stappen AI binnen via gemak. Dat is logisch. Een chatvenster werkt meteen. Een model helpt met schrijven, samenvatten, zoeken of structureren. Een nieuwe tool belooft snelheid. Een browseragent klikt taken weg. Een app maakt in een paar minuten iets wat vroeger dagen of weken kostte. Het voelt vaak als pure winst.</p>
+<p>En in het begin is het dat ook.</p>
+<p>Het probleem ontstaat pas later. Niet op de eerste dag dat je een model gebruikt, maar op de honderdste. Niet wanneer je een losse prompt probeert, maar wanneer werkprocessen zich in een platform beginnen vast te zetten. Dan merk je dat je aantekeningen in chats wonen, dat je vaste instructies nergens echt beheerd worden, dat waardevolle context alleen nog in de geschiedenis van een bepaalde tool terug te vinden is en dat je werktempo ongemerkt afhankelijk is geworden van één interface.</p>
+<p>Dat is de echte reden waarom dit boek nodig is.</p>
+<p>AI-autonomie gaat niet over de droom om nooit meer afhankelijk te zijn van technologiebedrijven. Dat is voor de meeste mensen onhaalbaar, en meestal ook niet nodig. AI-autonomie gaat over iets veel praktischer: hoe voorkom je dat je werk vastloopt zodra een model verandert, een prijs omhoog gaat, een tool verdwijnt of een interface verslechtert?</p>
+<p>Die vraag is ineens belangrijk geworden omdat AI sneller beweegt dan gewone software.</p>
+<p>Bij traditionele software kon je jaren werken met ongeveer hetzelfde pakket. Er kwamen updates, concurrenten, prijswijzigingen, soms een overname. Dat was vervelend, maar meestal beheersbaar. Bij AI is de grond veel bewegelijker. Modellen worden snel beter of juist tijdelijk slechter op specifieke taken. Interfaces veranderen. Producten worden samengevoegd of uitgekleed. Er verschijnen nieuwe spelers die ineens veel aantrekkelijker zijn dan de koploper van drie maanden eerder. Wie alles in een enkele leverancier stopt, bouwt dus op een basis die veel minder stabiel is dan hij lijkt.</p>
+<p>Daar komt nog iets bij.</p>
+<p>AI raakt niet alleen je software, maar ook je denkwerk. Dat maakt de afhankelijkheid dieper. Bij een tekstverwerker kun je relatief makkelijk weg. Bij een AI-systeem waarin je toon, context, werkafspraken, projectkennis en persoonlijke routines zijn gaan wonen, is overstappen veel lastiger. Dan moet je niet alleen bestanden meenemen, maar ook een manier van werken.</p>
+<p>Veel gebruikers merken dat nog niet, omdat de opbrengst nu zo zichtbaar is. Een goede chatreactie voelt immers direct nuttig. Een agent die iets voor je uitzoekt, geeft meteen winst. Een tool die een eerste versie van een pagina bouwt, maakt indruk. Maar juist in die fase is het verstandig om alvast een tweede vraag te stellen: waar blijft dit werk eigenlijk?</p>
+<p>Staat het in mijn eigen omgeving, of alleen in die van iemand anders?</p>
+<p>Dat is geen ideologische vraag. Het is een praktische.</p>
+<p>Wie met AI werkt, bouwt namelijk altijd twee dingen tegelijk. Aan de oppervlakte bouw je output: teksten, analyses, tools, schema&#x27;s, samenvattingen, workflows. Daaronder bouw je nog iets anders op: context, routines, voorkeuren, standaarden, beslisregels en geheugen. Die tweede laag is vaak waardevoller dan het eerste losse resultaat. Als die laag alleen binnen een platform leeft, ben je kwetsbaarder dan je denkt.</p>
+<p>Dat betekent niet dat je nu alles lokaal moet draaien of zelf moet hosten. Het betekent wel dat je moet nadenken over wat van jou moet blijven, ook als de motor verandert. In de kern is dit boek dus een pleidooi voor een eigen laag boven de modellen. Niet tegen gemak, maar tegen achteloosheid.</p>
+<p>De mensen die de komende jaren het meeste hebben aan AI, zijn waarschijnlijk niet de mensen die het trouwst zijn aan één tool. Het zijn de mensen die slim gebruikmaken van goede modellen en tegelijk genoeg afstand bewaren om te kunnen wisselen. Niet omdat wisselen leuk is, maar omdat overstapruimte rust geeft.</p>
+<p>Die rust is meer waard dan ze klinkt.</p>
+<p>Wie weet dat notities, bronbestanden, werkinstructies en publicatielagen in eigen beheer zijn, raakt minder snel in paniek door de volgende AI-verschuiving. Je hoeft niet telkens helemaal opnieuw te beginnen. Je hoeft niet elke nieuwe tool als verlosser te zien. Je kunt kiezen op kwaliteit, prijs of gebruiksgemak, zonder dat je hele werkwijze mee omvalt.</p>
+<p>Dat is de hoofdgedachte van dit boek:</p>
+<p>gebruik de kracht van AI voluit, maar zorg dat wat jij opbouwt niet volledig van die krachtbron afhankelijk wordt.</p>
+<p>AI-autonomie is dus geen vlucht uit de moderne tooling. Het is een manier om er vol in te gaan zonder jezelf erin op te sluiten.</p>
+<h1 id="hoofdstuk-2-de-nieuwe-afhankelijkheid">Hoofdstuk 2. De nieuwe afhankelijkheid</h1>
+<p>Afhankelijkheid van technologie is niet nieuw. We leven al jaren in een wereld van platformen, clouds, abonnementen en gesloten ecosystemen. Toch voelt de afhankelijkheid rond AI anders. Dat komt doordat die dieper het werk in kruipt.</p>
+<p>Bij oudere software wist je meestal nog goed wat van jou was. Je had een document, een spreadsheet, een mapstructuur, een CMS, een inbox. Misschien was de tool waarin je werkte niet ideaal, maar de grenzen waren duidelijk. Bij AI vervagen die grenzen. Een gesprek levert een idee op, een analyse, een eerste versie, een nieuwe formulering, een beslissing. Later wil je erop terugkomen en merk je dat het nergens echt geland is. Het zit half in een chat, half in je hoofd en half in een tool die al twintig andere dingen onthoudt.</p>
+<p>Dat maakt AI-afhankelijkheid gevaarlijker én subtieler.</p>
+<p>De eerste vorm van afhankelijkheid zit in gedrag. Je went aan snelheid. Dat is prettig, maar het maakt lui op een specifieke manier. Je stopt met het netjes vastleggen van dingen, omdat je vertrouwt op de chatgeschiedenis. Je slaat minder tussenversies op. Je vertrouwt erop dat een model later wel weer iets vergelijkbaars kan produceren. Soms klopt dat. Vaak verlies je intussen context die je niet zomaar terugkrijgt.</p>
+<p>De tweede vorm zit in structuur. Veel mensen bouwen inmiddels kleine systemen van prompts, custom instructions, agent-workflows, projectmappen binnen tools en losse automatiseringen. Dat is op zich verstandig. Alleen: als al die onderdelen binnen één omgeving blijven hangen, heb je in feite een intern systeem gebouwd in huurgrond.</p>
+<p>Daar zit de echte kwetsbaarheid.</p>
+<p>Je bent niet afhankelijk omdat een tool goed is. Je bent afhankelijk zodra de overstapkosten hoog worden. Zodra je denkt: ik zou best willen wisselen, maar dan raak ik te veel kwijt. Of: ik zou deze nieuwe tool willen proberen, maar dan moet ik eerst mijn hele context reconstrueren. Of: dit platform is duurder en stroperiger geworden, maar het zit te diep in mijn manier van werken om nu nog weg te kunnen.</p>
+<p>Dat moment komt sneller dan veel mensen verwachten.</p>
+<p>AI-tools nodigen lock-in ook actief uit. Niet noodzakelijk uit kwade wil, wel uit productlogica. Het is in hun belang dat je meer context aanlevert, meer taken in dezelfde omgeving doet, meer gewoontegedrag ontwikkelt en minder snel weggaat. Daarom bieden ze geheugenfuncties, projectruimtes, agentlagen, bestandskoppelingen en steeds rijkere interfaces. Dat is vaak nuttig. Het maakt je werk ook plakkeriger.</p>
+<p>Daarmee komen we bij een belangrijk onderscheid.</p>
+<p>Niet elke afhankelijkheid is verkeerd. Sommige afhankelijkheid koop je bewust in omdat die de moeite waard is. Als een model aantoonbaar beter is voor een taak, is het prima om daar zwaar op te leunen. Het probleem begint pas wanneer je niet meer goed ziet wat je precies hebt uitbesteed en wat je nog bezit.</p>
+<p>Veel gebruikers hebben daar geen helder antwoord op.</p>
+<p>Ze weten welke tool ze openen. Ze weten vaak niet waar hun werklaag eindigt en waar de toollaag begint. Dat is waarom AI-autonomie geen technisch hobbyproject is, maar een vorm van professioneel zelfbehoud. Je wilt genoeg overzicht houden om te kunnen zeggen:</p>
+<ul>
+<li>dit is mijn bronlaag</li>
+<li>dit zijn mijn vaste formats</li>
+<li>dit zijn mijn werkafspraken</li>
+<li>dit is mijn projectcontext</li>
+<li>dit is vervangbaar</li>
+<li>en dit wil ik nooit alleen in een platform laten zitten</li>
+</ul>
+<p>Zodra je dat onderscheid scherper krijgt, verandert je relatie met AI. Je gebruikt het minder als magische ruimte waarin alles gebeurt, en meer als een reeks krachtige motoren die je in je eigen systeem inzet.</p>
+<p>Dat klinkt droger dan het voelt. In de praktijk maakt het je werk juist lichter.</p>
+<p>Je hoeft minder te onthouden. Je raakt minder kwijt. Je wordt minder nerveus van modelwissels. Je bent minder geneigd om op elke hype te springen, omdat je weet dat je je basis niet telkens hoeft om te gooien. Dat is misschien wel de belangrijkste opbrengst van autonomie: niet heroische onafhankelijkheid, maar kalmte.</p>
+<h1 id="hoofdstuk-3-bouw-je-eigen-laag-boven-de-modellen">Hoofdstuk 3. Bouw je eigen laag boven de modellen</h1>
+<p>Als je maar één gedachte uit dit boek onthoudt, laat het dan deze zijn: vertrouw niet alleen op de motor, bouw ook je eigen chassis.</p>
+<p>De meeste AI-gebruikers beginnen andersom. Ze leren eerst de motor kennen. Ze ontdekken wat een model goed kan, welke agent handig is, welke tool snel voelt, welke interface prettig werkt. Dat is een logische start. Alleen blijft het daar te vaak bij. Daardoor werken ze eigenlijk rechtstreeks op de machine van iemand anders.</p>
+<p>Een eigen laag boven de modellen verandert dat.</p>
+<p>Met zo&#x27;n laag bedoel ik geen ingewikkelde software-architectuur. Voor de meeste mensen is het veel eenvoudiger. Het is de verzameling van dingen die jouw manier van werken draagbaar maakt:</p>
+<ul>
+<li>je mappenstructuur</li>
+<li>je bronbestanden</li>
+<li>je markdownteksten</li>
+<li>je vaste templates</li>
+<li>je promptbibliotheek</li>
+<li>je checklists</li>
+<li>je kwaliteitscriteria</li>
+<li>je projectoverzichten</li>
+<li>je publicatielagen</li>
+</ul>
+<p>Dat lijkt misschien banaal. Juist daar zit de kracht.</p>
+<p>Wie zijn werk in gewone bestanden en heldere routines organiseert, hoeft minder te vertrouwen op toevallig chatgeheugen. Je kunt je context opnieuw aan een model voeren. Je kunt een andere tool inzetten op hetzelfde materiaal. Je kunt projecten overdragen. Je kunt later nog begrijpen hoe iets tot stand kwam.</p>
+<p>Dat maakt je werk minder spectaculair. Het maakt het wel veel sterker.</p>
+<p>Een goed voorbeeld is markdown. Niet omdat markdown heilig is, maar omdat het eenvoudig, leesbaar en breed bruikbaar is. Een tekst in markdown kan in een editor open, in een chat gebruikt worden, naar HTML vertaald worden, in een EPUB terechtkomen, in een kennisbank landen of in een publicatieworkflow meedraaien. Hetzelfde geldt in bredere zin voor platte tekst, HTML en goed beheerde mappen. Simpele formats zijn vaak onderschatte autonomie-tools.</p>
+<p>Hetzelfde principe geldt voor prompts en instructies.</p>
+<p>Veel mensen hebben inmiddels sterke prompts, maar bewaren die slordig. Een paar zitten in een notitieapp, een paar in custom instructions, een paar in oude chats, een paar in het hoofd. Daarmee bouw je geen eigen laag, maar losse afhankelijkheid. Zodra je prompts, beslisregels en kwaliteitslatten als eigen documenten behandelt, wordt het anders. Dan kun je ze onderhouden, verbeteren, hergebruiken en meenemen.</p>
+<p>Een eigen laag helpt ook om AI rustiger te gebruiken.</p>
+<p>Zonder zo&#x27;n laag voelt elk nieuw project alsof je weer vanaf nul begint. Je zoekt context bij elkaar, legt opnieuw uit wat je wilt, verliest tijd aan ruis en bent sneller onder de indruk van tools die vooral goed zijn in hun eerste vijf minuten. Met een eigen laag stap je anders in. Je hebt bronmateriaal, standaardstructuren en herbruikbare context. Daardoor maakt de specifieke tool minder uit.</p>
+<p>Dat is precies de bedoeling.</p>
+<p>Het doel is niet om modellen onbelangrijk te maken. Het doel is om de macht van modelwissels kleiner te maken. Een goed model blijft waardevol. Een beter model blijft welkom. Alleen rust je hele werkproces er niet meer volledig op.</p>
+<p>Je kunt dat zien als een simpele hiërarchie:</p>
+<ol>
+<li>bovenaan zit jouw werk</li>
+<li>daaronder jouw structuur</li>
+<li>daaronder jouw vaste routines</li>
+<li>pas daarna komen de modellen en tools</li>
+</ol>
+<p>Bij veel gebruikers is die volgorde precies omgekeerd. Dan bepaalt de tool hoe werk eruitziet, waar het blijft en hoe het later terug te vinden is. Dat voelt efficiënt totdat je wilt uitbreiden, publiceren, overdragen of overstappen.</p>
+<p>Een eigen laag is dus geen extra ballast. Het is wat voorkomt dat je later alles moet terugwinnen uit systemen die daar niet voor gebouwd zijn.</p>
+<p>De vraag is niet of je al zo&#x27;n laag hebt. De vraag is meestal: hoe bewust is die al?</p>
+<h1 id="hoofdstuk-4-waarom-chats-geen-geheugen-mogen-zijn">Hoofdstuk 4. Waarom chats geen geheugen mogen zijn</h1>
+<p>Chats zijn verleidelijk. Ze voelen direct, snel en slim. Je kunt denken, proberen, herformuleren, vragen stellen, laten herschrijven en meteen verder. Daardoor lijkt een chatvenster al snel op een werkruimte, een notitieblok en een geheugen tegelijk.</p>
+<p>Dat is precies waarom het gevaarlijk is.</p>
+<p>Chats zijn geweldig als tussenlaag. Ze zijn zwak als eindbestemming.</p>
+<p>De eerste reden is eenvoudig: terugvinden is slecht. Zelfs in goede interfaces blijft een chatgeschiedenis een lang, grillig spoor. Misschien weet je nog ongeveer wanneer iets gezegd werd. Misschien herinner je je een trefwoord. Misschien niet. En juist omdat een chat zoveel verschillende soorten werk door elkaar bewaart, vervaagt de waarde. Een sterk inzicht staat naast een vluchtig probeersel, een lijstje naast een losse grap, een echte doorbraak naast tien mislukte iteraties.</p>
+<p>De tweede reden is dat chats context opsluiten. Een antwoord uit een chat is vaak alleen volledig begrijpelijk binnen het gesprek waarin het ontstond. Haal je het eruit, dan ontbreken nuance, bron, opdracht of eerdere keuzes. Dat maakt chats slechte archieven. Ze bewaren veel, maar ontsluiten weinig.</p>
+<p>De derde reden is dat een chatomgeving zelden jouw informatiestructuur volgt. Projecten lopen door elkaar. Thema&#x27;s raken versnipperd. Belangrijke stukken zijn niet vanzelf gekoppeld aan je bestanden, je publicatielaag of je routines. Wat in een chat waardevol lijkt, is daarom vaak moeilijk terug te brengen naar een systeem waar je echt op kunt bouwen.</p>
+<p>Dit zie je in bijna iedere AI-werkpraktijk terug.</p>
+<p>Mensen hebben een goede gedachte gehad. Een model gaf een scherpe formulering. Een agent leverde een bruikbare analyse. Een planning werd helder. Een structuur klopte ineens. En een week later is dat alles alweer half verdwenen in de diepte van een tijdlijn.</p>
+<p>Dat is geen klein ongemak. Dat is productiviteitsverlies.</p>
+<p>Daarom moet je een simpele vuistregel aanhouden:</p>
+<p>alles wat later nog waarde heeft, moet uit de chat naar je eigen laag.</p>
+<p>Dat kan op allerlei manieren. Naar een markdownbestand. Naar een projectmap. Naar een bronnotitie. Naar een checklist. Naar een manuscript. Naar een lopend document waarin beslissingen en inzichten samenkomen. De precieze vorm is minder belangrijk dan het principe. Wat belangrijk blijft, mag niet in de chat blijven wonen.</p>
+<p>Dat vraagt discipline, maar niet heel veel. Je hoeft niet alles op te slaan. Juist niet. Een groot deel van chatwerk is vluchtig en mag dat ook blijven. De kunst is selectief landen. Wat echt bronwaarde, projectwaarde of hergebruikwaarde heeft, geef je een duidelijke plek.</p>
+<p>Daarmee verandert een chat van archief in werkbank. En dat is een veel betere rol.</p>
+<p>Een werkbank mag rommelig zijn. Een archief niet.</p>
+<p>Zodra je dat verschil serieus neemt, merk je ook dat AI prettiger gaat werken. Je wordt minder afhankelijk van herinnering. Je verliest minder sterke formuleringen. Je bouwt sneller voort op eerder werk. En je kunt andere tools makkelijker voeden, omdat de echte kennis niet in een afgesloten gesprek gevangen zit.</p>
+<h1 id="hoofdstuk-5-bestanden-formats-en-markdown-als-machtsmiddel">Hoofdstuk 5. Bestanden, formats en markdown als machtsmiddel</h1>
+<p>Bestanden klinken saai. Dat is precies hun voordeel.</p>
+<p>In een wereld die voortdurend nieuwe interfaces, agents en slimme lagen voortbrengt, zijn gewone bestanden een vorm van rust. Ze vragen niet om bewondering. Ze vragen om beheer. En goed beheer is vaak waardevoller dan een spectaculaire nieuwe tool.</p>
+<p>De reden is simpel. Wat in een open of eenvoudig format leeft, blijft verplaatsbaar.</p>
+<p>Een tekstbestand kun je openen in allerlei programma&#x27;s. Een markdownbestand kun je lezen zonder de tool die het maakte. HTML kun je publiceren, bewerken en omzetten. Een EPUB is afgeleid maar breed bruikbaar. Een PDF is niet ideaal als bron, wel nuttig als distributielaag. Een nette mapstructuur maakt projecten begrijpelijk zonder dat je een specifiek platform hoeft te openen.</p>
+<p>Daarmee worden formats een machtsmiddel.</p>
+<p>Niet in de grote politieke zin van het woord, maar in de dagelijkse praktijk. Ze bepalen hoeveel vrijheid je houdt. Een gesloten tool kan best fantastisch zijn. Alleen: als jouw werk er niet zonder kleerscheuren uit kan, betaal je daar later voor. Misschien niet vandaag. Wel zodra je wilt migreren, hergebruiken, samenvoegen, publiceren of automatiseren.</p>
+<p>Daarom is het slim om je bronlaag altijd simpeler te houden dan je zichtlaag.</p>
+<p>Je website mag mooier zijn dan je bronbestanden. Je publicatie-ervaring mag rijker zijn dan je manuscriptlaag. Je AI-tool mag slimmer ogen dan je mapstructuur. Maar onder dat alles wil je iets hebben dat niet fragiel is. Iets dat leesbaar blijft. Iets dat niet instort zodra een productbeslissing van een leverancier de verkeerde kant op valt.</p>
+<p>Markdown is daar vaak een goede kandidaat voor, juist omdat het zo weinig pretenties heeft. Je kunt er boeken in schrijven, notities in bewaren, prompts in beheren, checklists in bouwen en publicatieworkflows aan koppelen. Het dwingt je niet tot een zwaar systeem. Het ondersteunt wel continuiteit.</p>
+<p>Hetzelfde geldt voor hoe je bestanden benoemt en rangschikt. Een goede bestandsnaam is geen detail. Een heldere map is geen decoratie. Het zijn kleine autonomie-keuzes. Ze zorgen ervoor dat jij en anderen later nog snappen wat iets is, waar het hoort en hoe het gebruikt kan worden.</p>
+<p>Wie dat onderschat, betaalt vaak in vertraging. Niet doordat iets crasht, maar doordat alles net iets lastiger terug te vinden, uit te wisselen en op te schalen is.</p>
+<p>Daarom hoort dit hoofdstuk in een boek over autonomie. Niet omdat bestanden spannend zijn, maar omdat ze in stilte de vrijheid van je werk bepalen.</p>
+<h1 id="hoofdstuk-6-werken-met-meerdere-modellen-zonder-gek-te-worden">Hoofdstuk 6. Werken met meerdere modellen zonder gek te worden</h1>
+<p>Niet elk model is overal het beste in. Dat is inmiddels duidelijk genoeg. Het ene model denkt scherper mee, het andere schrijft prettiger, een derde codeert sterker, een vierde is sneller of goedkoper. Die verscheidenheid is waardevol. Ze wordt pas onhandig wanneer je zonder systeem gaat hoppen.</p>
+<p>Veel mensen schieten daarin door naar een van twee kanten.</p>
+<p>Of ze blijven alles hardnekkig in één tool doen, ook wanneer die aantoonbaar niet de beste keuze is. Of ze springen juist van model naar model en verliezen daardoor ritme, consistentie en overzicht.</p>
+<p>Autonomie vraagt om een derde route.</p>
+<p>Niet één model voor alles. Ook niet tien modellen door elkaar. Wel: een kleine, bewuste set van uitwisselbare motoren met een eigen werklaag erboven.</p>
+<p>Dat betekent bijvoorbeeld dat je best een voorkeursmodel kunt hebben voor redactie, een ander voor productbouw en weer een ander voor snelle research of bulkwerk. Zolang de context, bronbestanden en kwaliteitslat niet in die tools opgesloten raken, is daar weinig mis mee. Sterker nog: het maakt je flexibeler.</p>
+<p>De kunst is dus niet modeltrouw, maar modeldiscipline.</p>
+<p>Je wilt kunnen zeggen:</p>
+<ul>
+<li>voor dit soort denkwerk gebruik ik meestal dit model</li>
+<li>voor deze technische taak pak ik liever dat model</li>
+<li>voor deze publicatieronde maakt het model weinig uit, omdat mijn bronlaag al goed is</li>
+</ul>
+<p>Wie zo werkt, kan veel rustiger wisselen. Een beter model voelt dan als upgrade, niet als verhuizing.</p>
+<p>Daarvoor moet je wel een paar dingen vermijden.</p>
+<p>Bewaar geen cruciale instructies alleen in custom settings van één platform. Laat projectkennis niet alleen in één chatomgeving ontstaan. Zorg dat goede prompts, stijlregels en werkafspraken ook buiten de tool bestaan. En vertrouw niet op geheugenfuncties als enige contextlaag. Ze kunnen nuttig zijn. Ze mogen nooit je enige fundament zijn.</p>
+<p>Dat is de praktische kant van multi-model werken. De strategische kant is minstens zo belangrijk.</p>
+<p>Wie met meerdere modellen kan werken, kijkt nuchterder naar de markt. Nieuwe spelers worden dan kansen in plaats van bedreigingen. Prijswijzigingen voelen minder dwingend. Hype verliest een deel van zijn macht. Je hoeft niet steeds meteen over. Je hoeft ook niet halsstarrig te blijven waar je zit. Je kunt vergelijken vanuit een positie van rust.</p>
+<p>Dat is autonomie in actie.</p>
+<h1 id="hoofdstuk-7-wat-houd-je-zelf-wat-huur-je-in">Hoofdstuk 7. Wat houd je zelf, wat huur je in</h1>
+<p>Er bestaat een romantisch idee over autonomie: dat je alles zelf zou moeten bezitten. Je eigen infrastructuur, je eigen hosting, je eigen modellen, je eigen opslag, je eigen tooling. Voor sommige specialisten is dat interessant. Voor de meeste mensen is het vooral ballast.</p>
+<p>Volledige controle is duur.</p>
+<p>Niet alleen in geld, ook in aandacht. Alles wat je zelf optuigt, moet je onderhouden, beveiligen, begrijpen en blijven verbeteren. Daarom is autonomie niet hetzelfde als alles zelf doen. Slimme autonomie begint met onderscheidingsvermogen.</p>
+<p>De relevante vraag is niet: wat kan ik zelf?</p>
+<p>De relevante vraag is: wat móet van mij blijven, en wat mag best gehuurd zijn zolang ik de uitgang kan vinden?</p>
+<p>Dat onderscheid helpt enorm.</p>
+<p>Wat je meestal zelf wilt houden:</p>
+<ul>
+<li>bronbestanden</li>
+<li>projectstructuur</li>
+<li>eigen kennislagen</li>
+<li>prompts en instructies die veel waarde dragen</li>
+<li>publicatieteksten</li>
+<li>beslisregels en kwaliteitslatten</li>
+</ul>
+<p>Wat je vaak prima kunt huren:</p>
+<ul>
+<li>rekenkracht van modellen</li>
+<li>specifieke interfaces</li>
+<li>specialistische apps</li>
+<li>snelle experimenteertools</li>
+<li>distributielagen zolang export mogelijk blijft</li>
+</ul>
+<p>Daar tussenin zit het grijze gebied. Een CMS bijvoorbeeld. Een notitieomgeving. Een automatiseringslaag. Een agentplatform. Daar gaat het niet alleen om de tool, maar om de exit-mogelijkheid. Kun je exporteren? Kun je bestanden meenemen? Kun je elders verder? Zijn je belangrijkste routines elders te reconstrueren?</p>
+<p>Dat is de goede toets.</p>
+<p>Een gehuurde tool is niet gevaarlijk omdat hij niet van jou is. Hij wordt pas riskant als jij niet meer zonder redelijke schade weg kunt.</p>
+<p>Daarom is autonomie vaak gewoon goed huurderschap.</p>
+<p>Je gebruikt krachtige diensten. Je profiteert van snelheid en innovatie. Maar je plant niet je hele leven in een woning zonder deur.</p>
+<h1 id="hoofdstuk-8-je-playbooks-en-kwaliteitslat-vastleggen">Hoofdstuk 8. Je playbooks en kwaliteitslat vastleggen</h1>
+<p>Veel mensen denken bij autonomie vooral aan tools en bestanden. Dat is terecht, maar onvolledig. Een groot deel van je echte werklaag zit niet in documenten, maar in gewoontes. In hoe je iets aanpakt. In hoe je kwaliteit beoordeelt. In welke stappen je altijd zet voordat iets goed genoeg is.</p>
+<p>Zolang die kennis alleen in je hoofd zit, ben je minder autonoom dan je denkt.</p>
+<p>Dan ben jij zelf namelijk de bottleneck.</p>
+<p>Daarom zijn playbooks belangrijk. Niet als bureaucratie, maar als geheugen voor goed werk. Een playbook kan heel klein zijn. Een checklist voor publicatie. Een vaste structuur voor research. Een redactieaanpak. Een werkwijze voor het omzetten van bronmateriaal naar manuscript. Een standaard voor hoe een agent-output beoordeeld wordt.</p>
+<p>Zodra je zulke dingen opschrijft, gebeurt er iets belangrijks.</p>
+<p>Je maakt je werk overdraagbaar. Aan een ander mens, aan een toekomstig model en ook aan jezelf over drie maanden. Je hoeft niet telkens opnieuw te bedenken wat &quot;goed&quot; eigenlijk betekent. Je maakt je kwaliteitslat expliciet.</p>
+<p>Dat is een onderschatte vorm van autonomie.</p>
+<p>Niet omdat je dan minder hulp nodig hebt, maar omdat je beter kunt kiezen welke hulp bruikbaar is. Een model dat jouw standaarden niet haalt, valt sneller door de mand. Een agent die de helft overslaat, wordt makkelijker gecorrigeerd. Een nieuwe tool kun je beter beoordelen, omdat je weet welke uitkomst je nodig hebt.</p>
+<p>Wie geen expliciete kwaliteitslat heeft, wordt sneller speelbal van de tool. Wat er goed uitziet, voelt dan al snel goed genoeg. Terwijl autonomie juist begint met een stevige eigen norm.</p>
+<h1 id="hoofdstuk-9-bouw-een-klein-maar-sterk-model-onafhankelijk-systeem">Hoofdstuk 9. Bouw een klein maar sterk model-onafhankelijk systeem</h1>
+<p>Een model-onafhankelijk systeem hoeft niet groot te zijn. Sterker nog: het moet liever klein beginnen.</p>
+<p>De fout die veel mensen maken, is dat ze autonomie verwarren met compleetheid. Dan willen ze ineens een perfect dashboard, een eigen geheugenlaag, een promptbibliotheek, een publicatiesysteem, een agentnetwerk en een mapstructuur voor alles. Het gevolg is meestal meer ambitie dan werking.</p>
+<p>Begin kleiner.</p>
+<p>Voor veel mensen is een eerste sterke versie al dit:</p>
+<ul>
+<li>een duidelijke inbox voor losse input</li>
+<li>een bronlaag voor wat bewaard moet blijven</li>
+<li>een projectlaag per lopend onderwerp</li>
+<li>een manuscript- of outputlaag voor wat gepubliceerd wordt</li>
+<li>een paar vaste formats</li>
+<li>een document met werkinstructies of playbooks</li>
+</ul>
+<p>Meer heb je vaak niet nodig om al veel rustiger te werken.</p>
+<p>Als je die basis hebt, kun je daar modellen bovenop inzetten. Een model helpt dan bij ordenen, samenvatten, structureren, redigeren, analyseren of bouwen. Maar de ruggengraat van het werk blijft van jou. Daardoor maakt het minder uit welke motor je vandaag gebruikt.</p>
+<p>Dat is de praktische vertaling van autonomie:</p>
+<p>geen spectaculair systeem wel een systeem dat jou niet gijzelt</p>
+<p>Je merkt snel genoeg waar uitbreiding zinvol is. Misschien wil je later een betere zoeklaag. Misschien een agent die wekelijks een bepaalde bron verwerkt. Misschien een publicatieroute naar site, EPUB en PDF. Prima. Als de basis goed is, groeit dat organisch.</p>
+<p>De kunst is dus niet om een totaalplatform te dromen. De kunst is om een kleine werklaag te bouwen die bestand is tegen verandering.</p>
+<h1 id="hoofdstuk-10-onafhankelijk-genoeg-is-beter-dan-volledig-autonoom">Hoofdstuk 10. Onafhankelijk genoeg is beter dan volledig autonoom</h1>
+<p>Er zijn twee slechte eindbeelden rond AI.</p>
+<p>Het eerste is totale overgave: alles in één platform, alles in chats, alles in de cloud van een leverancier, zonder plan B en zonder eigen structuur.</p>
+<p>Het tweede is totale zuiverheid: alles zelf willen, alles lokaal, alles open source, alles onder volledige controle, ongeacht de prijs in tijd, aandacht en complexiteit.</p>
+<p>Beide zijn onhandig.</p>
+<p>Het eerste maakt je kwetsbaar. Het tweede maakt je traag.</p>
+<p>Daarom is de beste uitkomst meestal niet volledige autonomie, maar voldoende autonomie. Genoeg om te kunnen bewegen. Genoeg om te kunnen wisselen. Genoeg om niet opnieuw te hoeven beginnen als de markt verschuift. Genoeg om je werk van jou te laten blijven, ook wanneer de gereedschappen veranderen.</p>
+<p>Dat is een nuchtere ambitie. Juist daarom is ze sterk.</p>
+<p>Wie onafhankelijk genoeg is, kan de beste motor van dit moment gebruiken zonder zichzelf eraan te verkopen. Je profiteert van snelheid en kwaliteit, maar bewaart je eigen basis. Je kunt huren zonder je hele huis uit handen te geven. Je kunt vernieuwen zonder je geheugen telkens te verliezen.</p>
+<p>Misschien is dat wel de volwassen vorm van AI-gebruik.</p>
+<p>Niet: welke tool wint?</p>
+<p>Maar: hoe richt ik mijn werk zo in dat ik met goede tools kan werken zonder door ze opgesloten te raken?</p>
+<p>Dat is waar AI-autonomie uiteindelijk over gaat.</p>
+<p>Niet over afstand nemen van de toekomst.</p>
+<p>Wel over zorgen dat je je er vrij genoeg in kunt bewegen.</p>
+      </article>
+    </main>
+    <section class="license-strip">
+      <h1 id="licentie">Licentie</h1>
+<p>Deze tekst is beschikbaar onder de Creative Commons-licentie <code>CC BY-SA 4.0</code>.</p>
+<p>Dat betekent kort gezegd:</p>
+<ul>
+<li>delen mag</li>
+<li>hergebruiken mag</li>
+<li>bewerken mag</li>
+<li>ook commercieel gebruik is toegestaan</li>
+</ul>
+<p>Zolang je Erwin Blom als bron noemt en afgeleide versies onder dezelfde licentie deelt.</p>
+<p>Meer informatie:</p>
+<p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.nl" target="_blank" rel="noopener noreferrer">Creative Commons BY-SA 4.0</a></p>
+    </section>
+  </body>
+</html>
