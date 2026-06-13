@@ -244,7 +244,7 @@ def render_book_index(config: dict) -> str:
           <h1>{text_html(config["title"])}</h1>
           <p class="lead">{text_html(config["lead"])}</p>
           <div class="hero-actions">
-            <a class="primary-action" href="./book.html">Lees het manual</a>
+            <a class="primary-action" href="./book.html">Lees het boek</a>
             <a class="secondary-action" href="../exports/{text_html(config["exports"]["pdf"])}">Download PDF</a>
             <a class="secondary-action" href="../exports/{text_html(config["exports"]["epub"])}">Download EPUB</a>
           </div>
@@ -261,7 +261,7 @@ def render_book_index(config: dict) -> str:
 
       <section class="chapter-strip">
         <div class="chapter-head">
-          <p class="eyebrow">In dit manual</p>
+          <p class="eyebrow">In dit boek</p>
           <h2>{text_html(config["chapters_title"])}</h2>
         </div>
         <div class="chapter-list">
@@ -306,7 +306,7 @@ def render_manuals_index(root_config: dict, books: list[dict]) -> str:
           <p class="subtitle">{text_html(book["overview_subtitle"])}</p>
           <p class="summary">{text_html(book["overview_summary"])}</p>
           <div class="actions">
-            <a href="../{text_html(book["dir"])}/site/index.html">Open manual</a>
+            <a href="../{text_html(book["dir"])}/site/index.html">Open boek</a>
             <a href="../{text_html(book["dir"])}/site/book.html">Lees online</a>
             <a href="../{text_html(book["dir"])}/exports/{text_html(book["exports"]["pdf"])}">PDF</a>
             <a href="../{text_html(book["dir"])}/exports/{text_html(book["exports"]["epub"])}">EPUB</a>

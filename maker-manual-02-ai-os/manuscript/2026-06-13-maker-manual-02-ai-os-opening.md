@@ -8,7 +8,7 @@
 
 Dit boek is bewust een werk in uitvoering: geen eindpunt, maar een versie die beter wordt terwijl het onderwerp beweegt.
 
-Gebaseerd op nieuwsbrieven en werknotities van Erwin Blom, met hulp van AI omgezet in een Maker Manual.
+Gebaseerd op nieuwsbrieven en werknotities van Erwin Blom, met hulp van AI omgezet in een boek.
 
 Deze tekst is beschikbaar onder de Creative Commons-licentie `CC BY-SA 4.0`.
 

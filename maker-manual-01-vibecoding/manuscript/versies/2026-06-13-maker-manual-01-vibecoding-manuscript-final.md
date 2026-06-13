@@ -10,7 +10,7 @@ Een praktische gids voor mensen die willen bouwen met AI zonder klassieke progra
 
 ## Colofon
 
-Gebaseerd op de nieuwsbrieven van Erwin Blom, met hulp van AI omgezet tot een `Maker Manual`.
+Gebaseerd op de honderden met bloed, zweet en tranen geschreven nieuwsbrieven van Erwin Blom, met hulp van AI omgezet tot een boek dat permanent geupdate en geactualiseerd wordt omdat de ontwikkelingen op het gebied van AI niet stil staan.
 
 Deze tekst is beschikbaar onder de Creative Commons-licentie `CC BY-SA 4.0`.
 
@@ -42,7 +42,7 @@ De hoofdgedachte van dit boek is eenvoudig. Vibecoding maakt software voor veel 
 
 Als dit boek goed werkt, levert het rust en maaklust op. Rust, omdat je scherper ziet waar vibecoding wel en niet goed voor is. Maaklust, omdat de afstand tussen idee en eerste versie kleiner voelt zodra je met de juiste verwachtingen begint.
 
-Dat is genoeg ambitie voor één manual.
+Dat is genoeg ambitie voor één boek.
 
 ## Inhoud
 

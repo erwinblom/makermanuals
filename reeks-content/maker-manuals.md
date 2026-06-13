@@ -4,7 +4,7 @@
 Reeks
 
 ## Lead
-Manuals over bouwen, organiseren en onafhankelijk werken met AI.
+Boeken over bouwen, organiseren en onafhankelijk werken met AI.
 
 ## Notitieblok
 ### Titel
@@ -15,10 +15,10 @@ Dit zijn boeken in permanente ontwikkeling: gebaseerd op de nieuwsbrieven van Er
 
 ## Introkaarten
 ### Wat dit is
-Een groeiende reeks praktische manuals, gebaseerd op de nieuwsbrieven van Erwin Blom en met hulp van AI omgezet in leesbare handboeken voor makers.
+Een groeiende reeks praktische boeken, gebaseerd op de nieuwsbrieven van Erwin Blom en met hulp van AI omgezet in leesbare handboeken voor makers.
 
 ### Hoe je ze leest
-Elke manual heeft een online leesversie en meestal ook een EPUB en PDF. De reeks is bewust niet af: de boeken worden doorlopend uitgebreid, aangescherpt en geactualiseerd.
+Elk boek heeft een online leesversie en meestal ook een EPUB en PDF. De reeks is bewust niet af: de boeken worden doorlopend uitgebreid, aangescherpt en geactualiseerd.
 
 ### Waarom deze reeks bestaat
 Omdat AI razendsnel verandert, maar de onderliggende vragen juist blijvender worden: hoe bouw je iets, hoe organiseer je het en hoe blijf je vrij genoeg om te kunnen bewegen?

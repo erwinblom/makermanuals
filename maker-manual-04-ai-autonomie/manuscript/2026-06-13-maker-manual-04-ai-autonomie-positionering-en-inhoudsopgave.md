@@ -14,7 +14,7 @@ Dit boek is bewust een werk in uitvoering: geen eindpunt, maar een versie die be
 
 ## Herkomst
 
-Gebaseerd op de nieuwsbrieven van Erwin Blom, met hulp van AI in een Maker Manual omgezet.
+Gebaseerd op de nieuwsbrieven van Erwin Blom, met hulp van AI omgezet in een boek.
 
 Deze tekst is beschikbaar onder de Creative Commons-licentie `CC BY-SA 4.0`.
 

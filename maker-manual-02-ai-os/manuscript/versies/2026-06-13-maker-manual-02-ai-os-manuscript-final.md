@@ -2,9 +2,9 @@
 
 `Alpha-editie 0.8 - levend boek in ontwikkeling`
 
-Dit boek is bewust een werk in uitvoering: geen eindpunt, maar een versie die beter wordt terwijl het onderwerp beweegt.
+Dit boek is bewust een werk in uitvoering: geen eindpunt, maar een versie die beter wordt terwijl het onderwerp zich verder ontwikkelt.
 
-Gebaseerd op nieuwsbrieven en werknotities van Erwin Blom, met hulp van AI omgezet in een Maker Manual.
+Gebaseerd op de honderden met bloed, zweet en tranen geschreven nieuwsbrieven van Erwin Blom, met hulp van AI omgezet tot een boek dat permanent geupdate en geactualiseerd wordt omdat de ontwikkelingen op het gebied van AI niet stil staan.
 
 Deze tekst is beschikbaar onder de Creative Commons-licentie `CC BY-SA 4.0`.
 

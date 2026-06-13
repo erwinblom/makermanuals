@@ -55,7 +55,7 @@ Ten eerste: meer rust. Omdat je beter ziet wat vibecoding wel en niet is.
 
 Ten tweede: meer maaklust. Omdat de afstand tussen idee en eerste versie kleiner voelt zodra je met de juiste verwachtingen en de juiste werkhouding begint.
 
-Dat is genoeg ambitie voor één manual.
+Dat is genoeg ambitie voor één boek.
 
 ## Inhoud
 
