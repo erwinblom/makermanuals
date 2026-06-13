@@ -117,7 +117,7 @@ def build_books() -> None:
 
 
 def main() -> None:
-    keep = {"prepare_publish.py", "README.md", "vercel.json"}
+    keep = {".gitignore", "prepare_publish.py", "README.md", "vercel.json"}
     for item in ROOT.iterdir():
         if item.name in keep:
             continue
