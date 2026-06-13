@@ -1,13 +1,10 @@
 # Maker Manuals
 
-## Teruglink
-Terug naar publiekslaag
-
 ## Stempel
 Reeks
 
 ## Lead
-Boeken over bouwen, organiseren en onafhankelijk werken met AI.
+Manuals over bouwen, organiseren en onafhankelijk werken met AI.
 
 ## Notitieblok
 ### Titel
@@ -18,7 +15,7 @@ Dit zijn boeken in permanente ontwikkeling: gebaseerd op de nieuwsbrieven van Er
 
 ## Introkaarten
 ### Wat dit is
-Een groeiende reeks praktische boeken, gebaseerd op de nieuwsbrieven van Erwin Blom en met hulp van AI omgezet in leesbare manuals.
+Een groeiende reeks praktische manuals, gebaseerd op de nieuwsbrieven van Erwin Blom en met hulp van AI omgezet in leesbare handboeken voor makers.
 
 ### Hoe je ze leest
 Elke manual heeft een online leesversie en meestal ook een EPUB en PDF. De reeks is bewust niet af: de boeken worden doorlopend uitgebreid, aangescherpt en geactualiseerd.
@@ -30,4 +27,4 @@ Omdat AI razendsnel verandert, maar de onderliggende vragen juist blijvender wor
 Voor makers, zelfstandigen, kleine teams en nieuwsgierige niet-techneuten die AI niet alleen willen proberen, maar er echt iets duurzaams mee willen opbouwen.
 
 ### Leesvolgorde
-Begin met Vibecoding, ga dan naar AI-OS, daarna Het AI-bedrijf en lees AI-autonomie als de meest jonge, open versie van het vierde spoor.
+Begin met Vibecoding, ga dan naar AI-OS, daarna Het AI-bedrijf en lees AI-autonomie als de vroegste, open versie van het vierde spoor.

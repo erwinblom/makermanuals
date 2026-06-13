@@ -14,14 +14,14 @@ Technologie die onthoudt, meedenkt en voor je werkt.
 Technologie die onthoudt, meedenkt en voor je werkt
 
 ### Samenvatting
-Over hoe je informatie, geheugen, routines en agents organiseert tot een werkend systeem dat echt met je meewerkt.
+Over hoe je informatie, geheugen, routines en agents organiseert tot een systeem dat echt met je meewerkt.
 
 ## Statusblok
 ### Badge
 Alpha-editie 0.8
 
 ### Tekst
-Levend boek in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.
+Boek in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.
 
 ## Zijbalk
 ### Formaat
@@ -35,7 +35,7 @@ Alpha-editie 0.8
 
 ## Blokken
 ### coral | Waarom dit boek nodig is
-Niet nog een AI-toolgids, maar een boek over hoe je je werk zo organiseert dat AI echt voor je kan werken.
+Niet nog een AI-toolgids, maar een boek over hoe je je werk zo organiseert dat AI je echt vooruit helpt.
 
 ### lime | Wat je krijgt
 Een methode voor identiteit, geheugen, routines, output, feedback en automatisering zonder technische overdaad.

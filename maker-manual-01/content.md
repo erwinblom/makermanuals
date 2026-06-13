@@ -14,14 +14,14 @@ Apps en tools bouwen zonder technische achtergrond.
 Apps en tools bouwen zonder technische achtergrond
 
 ### Samenvatting
-Voor mensen die software willen laten ontstaan zonder klassieke programmeur te zijn.
+Voor mensen die software en tools willen bouwen zonder programmeur te zijn.
 
 ## Statusblok
 ### Badge
 Alpha-editie 0.8
 
 ### Tekst
-Levend boek in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.
+Boek in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.
 
 ## Zijbalk
 ### Formaat
@@ -35,7 +35,7 @@ Alpha-editie 0.8
 
 ## Blokken
 ### yellow | Waarom dit werkt
-Het boek zit niet vast aan toolhype, maar aan een blijvende verschuiving: meer makers kunnen dichter op software gaan zitten.
+Het boek gaat niet over toolhypes, maar over een blijvende verschuiving: meer makers kunnen zelf software bouwen.
 
 ### mint | Hoe je het leest
 Als webeditie, als EPUB, als PDF en als markdown-bronbestand. De webversie is de hoofdversie.

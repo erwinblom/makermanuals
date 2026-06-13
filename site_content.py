@@ -314,6 +314,9 @@ def render_manuals_index(root_config: dict, books: list[dict]) -> str:
         </article>"""
         for book in books
     )
+    back_link_html = ""
+    if root_config["back_link_label"]:
+        back_link_html = f'      <a class="back-link" href="../index.html">{text_html(root_config["back_link_label"])}</a>\n'
 
     return f"""<!doctype html>
 <html lang="nl">
@@ -325,7 +328,7 @@ def render_manuals_index(root_config: dict, books: list[dict]) -> str:
   </head>
   <body>
     <main class="shell">
-      <a class="back-link" href="../index.html">{text_html(root_config["back_link_label"])}</a>
+{back_link_html}
 
       <header class="hero">
         <div class="hero-copy">

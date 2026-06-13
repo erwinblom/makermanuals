@@ -7,21 +7,21 @@ Maker Manuals 03
 Alpha 0.8
 
 ## Lead
-Waarom kleine bedrijven dankzij AI slim en sterk kunnen zijn.
+Hoe kleine bedrijven dankzij AI slim en sterk kunnen zijn.
 
 ## Kaart op reeks-pagina
 ### Ondertitel
-Waarom kleine bedrijven dankzij AI slim en sterk kunnen zijn
+Hoe kleine bedrijven dankzij AI slim en sterk kunnen zijn
 
 ### Samenvatting
-Een praktisch boek over leverage, mini-infrastructuur en hoe kleine organisaties meer gedaan krijgen.
+Een praktisch boek over meer doen met minder, mini-infrastructuur en hoe kleine organisaties meer gedaan krijgen.
 
 ## Statusblok
 ### Badge
 Alpha-editie 0.8
 
 ### Tekst
-Levend boek in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.
+Boek in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.
 
 ## Zijbalk
 ### Formaat
@@ -35,10 +35,10 @@ Alpha-editie 0.8
 
 ## Blokken
 ### coral | Waar dit boek over gaat
-Geen managementboek over schaal om de schaal, maar een praktisch boek over hoe kleine organisaties meer kunnen doen zonder zwaarder te worden.
+Geen managementboek over schaal om de schaal, maar een praktisch boek over hoe kleine organisaties meer kunnen doen zonder groot te groeien.
 
 ### lime | Wat je krijgt
-Een denkkader voor leverage, eigen systemen, automatisering, consistentie en mini-infrastructuur voor kleine bedrijven.
+Een denkkader voor eigen systemen, automatisering, consistentie en een mini-infrastructuur voor kleine bedrijven.
 
 ### sky | Wat je ermee mag
 CC BY-SA 4.0: delen, hergebruiken en bewerken mag, zolang je Erwin Blom noemt en afgeleiden onder dezelfde licentie deelt.
