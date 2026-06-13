@@ -23,9 +23,9 @@ Waar deel 1 gaat over software kunnen maken met AI, gaat deel 2 over je eigen we
 
 - `manuscript/`
   Tekstlaag.
-  - `2026-06-13-maker-manual-02-ai-os-positionering-en-inhoudsopgave.md` is de huidige startnotitie
-  - `2026-06-13-maker-manual-02-ai-os-opening.md` is de opening
-  - `2026-06-13-maker-manual-02-ai-os-license.md` is de licentielaag
+  - `2026-06-13-MM-02-positionering-en-inhoudsopgave.md` is de huidige startnotitie
+  - `2026-06-13-MM-02-opening.md` is de opening
+  - `2026-06-13-MM-02-license.md` is de licentielaag
   - `hoofdstukken/` bevat de hoofdstukconcepten
   - `versies/` bevat samengestelde manuscriptversies
 
@@ -33,11 +33,11 @@ Waar deel 1 gaat over software kunnen maken met AI, gaat deel 2 over je eigen we
 
 De leidende leesversie is:
 
-- `manuscript/versies/2026-06-13-maker-manual-02-ai-os-manuscript-final.md`
+- `manuscript/versies/2026-06-13-MM-02-manuscript-final.md`
 
 De leidende ontwikkellaag is:
 
-- `manuscript/2026-06-13-maker-manual-02-ai-os-positionering-en-inhoudsopgave.md`
+- `manuscript/2026-06-13-MM-02-positionering-en-inhoudsopgave.md`
 
 ## Werkwijze
 

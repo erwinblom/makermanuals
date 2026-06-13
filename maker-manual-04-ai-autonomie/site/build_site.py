@@ -14,8 +14,8 @@ sys.path.insert(0, str(PUBLIEKSLAAG_ROOT))
 
 from site_content import load_book_content, render_book_index, render_book_page, write_manuals_source_index
 
-MANUSCRIPT = PROJECT_ROOT / "manuscript" / "versies" / "2026-06-13-maker-manual-04-ai-autonomie-manuscript-draft-01.md"
-LICENSE = PROJECT_ROOT / "manuscript" / "2026-06-13-maker-manual-04-ai-autonomie-license.md"
+MANUSCRIPT = PROJECT_ROOT / "manuscript" / "versies" / "2026-06-13-MM-04-manuscript-draft-01.md"
+LICENSE = PROJECT_ROOT / "manuscript" / "2026-06-13-MM-04-license.md"
 BOOK_HTML = ROOT / "book.html"
 INDEX_HTML = ROOT / "index.html"
 EPUB_PATH = PROJECT_ROOT / "exports" / "maker-manual-04-ai-autonomie.epub"

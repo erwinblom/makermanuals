@@ -19,8 +19,8 @@ Dit boek is bewust een werk in uitvoering: geen eindpunt, maar een versie die be
   Tekstlaag.
   - `hoofdstukken/` bevat de losse hoofdstukconcepten
   - `versies/` bevat de samengevoegde manuscriptversies
-  - `2026-06-13-maker-manual-01-vibecoding-license.md` is de licentielaag
-  - `2026-06-13-maker-manual-01-vibecoding-opening.md` is de opening/inhoudslaag
+  - `2026-06-13-MM-01-license.md` is de licentielaag
+  - `2026-06-13-MM-01-opening.md` is de opening/inhoudslaag
 
 - `site/`
   Publieke leeslaag in neo brutalism-stijl.
@@ -38,7 +38,7 @@ Dit boek is bewust een werk in uitvoering: geen eindpunt, maar een versie die be
 
 De leidende tekstversie is:
 
-- `manuscript/versies/2026-06-13-maker-manual-01-vibecoding-manuscript-final.md`
+- `manuscript/versies/2026-06-13-MM-01-manuscript-final.md`
 
 De site is de online leesversie van die bron.
 

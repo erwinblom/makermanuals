@@ -198,7 +198,7 @@ def render_book_page(config: dict, manuscript_html: str, license_html: str) -> s
   </head>
   <body class="book-body">
     <main class="book-shell">
-      <a class="back-link" href="../../maker-manuals/index.html">Terug naar Maker Manuals</a>
+      <a class="back-link" href="../../maker-manuals/index.html">Terug naar home</a>
       <aside class="book-side">
         <p class="eyebrow">{text_html(config["book_label"])}</p>
         <h1>{text_html(config["title"])}</h1>
@@ -314,10 +314,6 @@ def render_manuals_index(root_config: dict, books: list[dict]) -> str:
         </article>"""
         for book in books
     )
-    back_link_html = ""
-    if root_config["back_link_label"]:
-        back_link_html = f'      <a class="back-link" href="../index.html">{text_html(root_config["back_link_label"])}</a>\n'
-
     return f"""<!doctype html>
 <html lang="nl">
   <head>
@@ -328,7 +324,6 @@ def render_manuals_index(root_config: dict, books: list[dict]) -> str:
   </head>
   <body>
     <main class="shell">
-{back_link_html}
 
       <header class="hero">
         <div class="hero-copy">

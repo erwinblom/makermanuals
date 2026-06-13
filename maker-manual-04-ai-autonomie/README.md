@@ -60,4 +60,4 @@ De markdownbestanden in deze map zijn de bron van waarheid. Afgeleide vormen zoa
 
 De huidige leidende manuscriptversie is:
 
-- `manuscript/versies/2026-06-13-maker-manual-04-ai-autonomie-manuscript-draft-01.md`
+- `manuscript/versies/2026-06-13-MM-04-manuscript-draft-01.md`

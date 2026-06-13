@@ -42,6 +42,10 @@ Die vraag is ineens belangrijk geworden omdat AI sneller beweegt dan gewone soft
 
 Bij traditionele software kon je jaren werken met ongeveer hetzelfde pakket. Er kwamen updates, concurrenten, prijswijzigingen, soms een overname. Dat was vervelend, maar meestal beheersbaar. Bij AI is de grond veel bewegelijker. Modellen worden snel beter of juist tijdelijk slechter op specifieke taken. Interfaces veranderen. Producten worden samengevoegd of uitgekleed. Er verschijnen nieuwe spelers die ineens veel aantrekkelijker zijn dan de koploper van drie maanden eerder. Wie alles in een enkele leverancier stopt, bouwt dus op een basis die veel minder stabiel is dan hij lijkt.
 
+Soms wordt die kwetsbaarheid ineens zichtbaar door een enkel incident. Een model waar mensen hun weekend, workflow of productideeën op hadden gepland, blijkt opeens niet meer beschikbaar door een beleidsbesluit of overheidsingreep. Dan zie je hoe broos AI-afhankelijkheid kan zijn. Niet alleen omdat een tool verdwijnt, maar omdat tempo, gewoontes en maaklust er ongemerkt al op zijn gaan leunen.
+
+De verkeerde les uit zo'n moment is: dan moet voortaan alles lokaal en alles zelf. De betere les is nuchterder. Zorg dat je genoeg overstapruimte houdt. Lokale modellen kunnen daarbij nuttig zijn, niet als ideologie of prestigeproject, maar als extra speelruimte en verzekering. De kern van autonomie is niet volledige controle. De kern is dat een model, een prijswijziging of een beleidsbesluit je werk niet volledig stilzet.
+
 Daar komt nog iets bij.
 
 AI raakt niet alleen je software, maar ook je denkwerk. Dat maakt de afhankelijkheid dieper. Bij een tekstverwerker kun je relatief makkelijk weg. Bij een AI-systeem waarin je toon, context, werkafspraken, projectkennis en persoonlijke routines zijn gaan wonen, is overstappen veel lastiger. Dan moet je niet alleen bestanden meenemen, maar ook een manier van werken.

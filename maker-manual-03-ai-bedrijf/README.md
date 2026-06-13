@@ -23,13 +23,13 @@ Waar deel 1 gaat over maken en deel 2 over organiseren, gaat deel 3 over wat dat
 
 - `manuscript/`
   Tekstlaag.
-  - `2026-06-13-maker-manual-03-ai-bedrijf-positionering-en-inhoudsopgave.md` is de startnotitie
+  - `2026-06-13-MM-03-positionering-en-inhoudsopgave.md` is de startnotitie
 
 ## Bron van waarheid
 
 De leidende ontwikkellaag is:
 
-- `manuscript/2026-06-13-maker-manual-03-ai-bedrijf-positionering-en-inhoudsopgave.md`
+- `manuscript/2026-06-13-MM-03-positionering-en-inhoudsopgave.md`
 
 ## Werkwijze
 

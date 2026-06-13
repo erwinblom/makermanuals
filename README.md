@@ -34,6 +34,28 @@ Dit deel is voor wie aan de inhoud of publicatielaag werkt.
 - Boek-overzichtspagina per manual: `maker-manual-01-vibecoding/content.md` tot en met `maker-manual-04-ai-autonomie/content.md`
 - Lopende boektekst zelf: het markdownbestand in `manuscript/`
 
+### Naamregel voor bestanden
+
+Gebruik voor bestandsnamen binnen de `Maker Manuals`-reeks voortaan de korte familiecode:
+
+- `MM` = hele reeks
+- `MM-01` = `Vibecoding`
+- `MM-02` = `AI-OS`
+- `MM-03` = `Het AI-bedrijf`
+- `MM-04` = `AI-autonomie`
+
+Praktische regel:
+
+- mapnamen mogen beschrijvend blijven
+- bestandsnamen binnen de boekmappen worden bij voorkeur kort en scanbaar met `YYYY-MM-DD-MM-..-...`
+
+Voorbeelden:
+
+- `2026-06-13-MM-04-manuscript-draft-01.md`
+- `2026-06-13-MM-04-positionering-en-inhoudsopgave.md`
+- `2026-06-13-MM-04-bronnenrichtingen.md`
+- `2026-06-13-MM-04-greg-isenberg-lokale-modellen-als-verzekering.md`
+
 De markdownbestanden zijn nu expres menselijk opgezet, met gewone secties als:
 
 - `Lead`
@@ -53,7 +75,12 @@ De markdownbestanden zijn nu expres menselijk opgezet, met gewone secties als:
 
 1. Werk inhoudelijk in de juiste boekmap.
 2. Werk bij betekenisvolle wijzigingen ook het juiste `CHANGELOG.md` bij.
-3. Gebruik voor commits dit format:
+3. Gebruik in Vercel voortaan alleen het project `maker-manuals-vercel` als canonieke publicatielaag voor `maker-manuals.vercel.app`.
+
+Oud Vercel-project:
+
+- `maker-manuals-publish-archief` is alleen nog archief en niet meer de leidende live-publicatie.
+4. Gebruik voor commits dit format:
 
 `[Boektitel]: [inhoud|site|export|structuur] - [wijziging]`
 
