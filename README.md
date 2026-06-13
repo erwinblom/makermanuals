@@ -28,6 +28,27 @@ Deze reeks is bedoeld voor mensen die wel met AI willen werken, maar geen behoef
 
 Dit deel is voor wie aan de inhoud of publicatielaag werkt.
 
+### Waar pas je teksten aan
+
+- Overkoepelende reeks-pagina: `content/maker-manuals.md`
+- Boek-overzichtspagina per manual: `maker-manual-01/content.md` tot en met `maker-manual-04-ai-autonomie/content.md`
+- Lopende boektekst zelf: het markdownbestand in `manuscript/`
+
+De markdownbestanden zijn nu expres menselijk opgezet, met gewone secties als:
+
+- `Lead`
+- `Kaart op reeks-pagina`
+- `Statusblok`
+- `Zijbalk`
+- `Blokken`
+- `Hoofdstukken`
+
+### Opnieuw opbouwen
+
+- Alleen de reeks-pagina: `python3 maker-manuals/build_page.py`
+- Een boekpagina en de gekoppelde reeks-kaart: draai het bestaande `site/build_site.py` in die boekmap
+- Publicatielaag verversen: `python3 maker-manuals-publish/prepare_publish.py`
+
 ### Werkwijze
 
 1. Werk inhoudelijk in de juiste boekmap.

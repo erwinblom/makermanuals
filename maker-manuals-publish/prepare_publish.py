@@ -2,10 +2,14 @@ from __future__ import annotations
 
 from pathlib import Path
 import shutil
+import sys
 
 
 ROOT = Path(__file__).resolve().parent
 SOURCE_ROOT = ROOT.parent
+sys.path.insert(0, str(SOURCE_ROOT))
+
+from site_content import write_manuals_source_index
 
 HUB_SOURCE = SOURCE_ROOT / "maker-manuals"
 
@@ -53,6 +57,7 @@ def copy_tree(src: Path, dst: Path) -> None:
 
 
 def build_hub() -> None:
+    write_manuals_source_index()
     copy_file(HUB_SOURCE / "index.html", ROOT / "index.html")
     copy_file(HUB_SOURCE / "styles.css", ROOT / "styles.css")
 

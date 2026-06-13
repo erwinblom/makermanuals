@@ -3,16 +3,23 @@ from __future__ import annotations
 from html import escape
 from pathlib import Path
 import re
+import sys
 from zipfile import ZIP_DEFLATED, ZIP_STORED, ZipFile
 
 
 ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = ROOT.parent
+PUBLIEKSLAAG_ROOT = PROJECT_ROOT.parent
+sys.path.insert(0, str(PUBLIEKSLAAG_ROOT))
+
+from site_content import load_book_content, render_book_index, render_book_page, write_manuals_source_index
+
 MANUSCRIPT = PROJECT_ROOT / "manuscript" / "versies" / "2026-06-13-maker-manual-02-ai-os-manuscript-final.md"
 LICENSE = PROJECT_ROOT / "manuscript" / "2026-06-13-maker-manual-02-ai-os-license.md"
 BOOK_HTML = ROOT / "book.html"
 INDEX_HTML = ROOT / "index.html"
 EPUB_PATH = PROJECT_ROOT / "exports" / "maker-manual-02-ai-os.epub"
+CONTENT = PROJECT_ROOT / "content.md"
 
 
 def slugify(text: str) -> str:
@@ -135,121 +142,15 @@ def markdown_to_html(md: str) -> str:
 
 
 def build_book() -> None:
+    config = load_book_content(CONTENT)
     manuscript_html = markdown_to_html(MANUSCRIPT.read_text())
     license_html = markdown_to_html(LICENSE.read_text())
-
-    book = f"""<!doctype html>
-<html lang="nl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI-OS</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body class="book-body">
-    <main class="book-shell">
-      <a class="back-link" href="../../maker-manuals/index.html">Terug naar Maker Manuals</a>
-      <aside class="book-side">
-        <p class="eyebrow">Maker Manuals 02</p>
-        <h1>AI-OS</h1>
-        <p class="side-summary">Technologie die onthoudt, meedenkt en voor je werkt.</p>
-        <div class="side-box">
-          <strong>Formaat</strong>
-          <span>Webeditie in neo brutalism-stijl</span>
-        </div>
-        <div class="side-box">
-          <strong>Licentie</strong>
-          <span>CC BY-SA 4.0</span>
-        </div>
-        <div class="side-box">
-          <strong>Status</strong>
-          <span>Alpha-editie 0.8</span>
-        </div>
-      </aside>
-      <article class="book-article">
-        {manuscript_html}
-      </article>
-    </main>
-    <section class="license-strip">
-      {license_html}
-    </section>
-  </body>
-</html>
-"""
-    BOOK_HTML.write_text(book)
+    BOOK_HTML.write_text(render_book_page(config, manuscript_html, license_html))
 
 
 def build_index() -> None:
-    index = """<!doctype html>
-<html lang="nl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI-OS</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body class="landing-body">
-    <main class="landing-shell">
-      <section class="hero-card">
-        <div class="hero-copy">
-          <p class="eyebrow">Maker Manuals 02</p>
-          <h1>AI-OS</h1>
-          <p class="lead">Technologie die onthoudt, meedenkt en voor je werkt.</p>
-          <div class="hero-actions">
-            <a class="primary-action" href="./book.html">Lees het manual</a>
-            <a class="secondary-action" href="../exports/maker-manual-02-ai-os.pdf">Download PDF</a>
-            <a class="secondary-action" href="../exports/maker-manual-02-ai-os.epub">Download EPUB</a>
-          </div>
-        </div>
-        <aside class="hero-note">
-          <strong>Alpha-editie 0.8</strong>
-          <span>Levend boek in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.</span>
-        </aside>
-      </section>
-
-      <section class="grid">
-        <article class="tile coral">
-          <span>01</span>
-          <h2>Waarom dit boek nodig is</h2>
-          <p>Niet nog een AI-toolgids, maar een boek over hoe je je werk zo organiseert dat AI echt voor je kan werken.</p>
-        </article>
-
-        <article class="tile lime">
-          <span>02</span>
-          <h2>Wat je krijgt</h2>
-          <p>Een methode voor identiteit, geheugen, routines, output, feedback en automatisering zonder technische overdaad.</p>
-        </article>
-
-        <article class="tile sky">
-          <span>03</span>
-          <h2>Wat je ermee mag</h2>
-          <p>CC BY-SA 4.0: delen, hergebruiken en bewerken mag, zolang je Erwin Blom noemt en afgeleiden onder dezelfde licentie deelt.</p>
-        </article>
-      </section>
-
-      <section class="chapter-strip">
-        <div class="chapter-head">
-          <p class="eyebrow">In dit manual</p>
-          <h2>Tien hoofdstukken</h2>
-        </div>
-        <div class="chapter-list">
-          <div>Waarom iedereen een AI-OS nodig heeft</div>
-          <div>Van losse tools naar een samenhangend systeem</div>
-          <div>Wat hoort in jouw AI-OS en wat niet</div>
-          <div>Je informatiehuishouding als fundament</div>
-          <div>Agents als collega's voor terugkerend werk</div>
-          <div>Geheugen, context en hergebruik</div>
-          <div>Wat je wel en niet moet automatiseren</div>
-          <div>Hoe je overzicht houdt als alles maakbaar wordt</div>
-          <div>Bouw je eerste bruikbare versie</div>
-          <div>Van hulpmiddel naar hefboom</div>
-        </div>
-      </section>
-    </main>
-  </body>
-</html>
-"""
-    INDEX_HTML.write_text(index)
+    config = load_book_content(CONTENT)
+    INDEX_HTML.write_text(render_book_index(config))
 
 
 def build_epub() -> None:
@@ -342,3 +243,4 @@ if __name__ == "__main__":
     build_book()
     build_index()
     build_epub()
+    write_manuals_source_index()

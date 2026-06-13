@@ -3,16 +3,23 @@ from __future__ import annotations
 from html import escape
 from pathlib import Path
 import re
+import sys
 from zipfile import ZIP_DEFLATED, ZIP_STORED, ZipFile
 
 
 ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = ROOT.parent
+PUBLIEKSLAAG_ROOT = PROJECT_ROOT.parent
+sys.path.insert(0, str(PUBLIEKSLAAG_ROOT))
+
+from site_content import load_book_content, render_book_index, render_book_page, write_manuals_source_index
+
 MANUSCRIPT = PROJECT_ROOT / "manuscript" / "versies" / "2026-06-13-maker-manual-04-ai-autonomie-manuscript-draft-01.md"
 LICENSE = PROJECT_ROOT / "manuscript" / "2026-06-13-maker-manual-04-ai-autonomie-license.md"
 BOOK_HTML = ROOT / "book.html"
 INDEX_HTML = ROOT / "index.html"
 EPUB_PATH = PROJECT_ROOT / "exports" / "maker-manual-04-ai-autonomie.epub"
+CONTENT = PROJECT_ROOT / "content.md"
 
 
 def slugify(text: str) -> str:
@@ -135,121 +142,15 @@ def markdown_to_html(md: str) -> str:
 
 
 def build_book() -> None:
+    config = load_book_content(CONTENT)
     manuscript_html = markdown_to_html(MANUSCRIPT.read_text())
     license_html = markdown_to_html(LICENSE.read_text())
-
-    book = f"""<!doctype html>
-<html lang="nl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI-autonomie</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body class="book-body">
-    <main class="book-shell">
-      <a class="back-link" href="../../maker-manuals/index.html">Terug naar Maker Manuals</a>
-      <aside class="book-side">
-        <p class="eyebrow">Maker Manuals 04</p>
-        <h1>AI-autonomie</h1>
-        <p class="side-summary">Onafhankelijk blijven in een wereld vol modellen, platforms en AI-tools.</p>
-        <div class="side-box">
-          <strong>Formaat</strong>
-          <span>Webeditie in neo brutalism-stijl</span>
-        </div>
-        <div class="side-box">
-          <strong>Licentie</strong>
-          <span>CC BY-SA 4.0</span>
-        </div>
-        <div class="side-box">
-          <strong>Status</strong>
-          <span>Alpha-editie 0.4</span>
-        </div>
-      </aside>
-      <article class="book-article">
-        {manuscript_html}
-      </article>
-    </main>
-    <section class="license-strip">
-      {license_html}
-    </section>
-  </body>
-</html>
-"""
-    BOOK_HTML.write_text(book)
+    BOOK_HTML.write_text(render_book_page(config, manuscript_html, license_html))
 
 
 def build_index() -> None:
-    index = """<!doctype html>
-<html lang="nl">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AI-autonomie</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body class="landing-body">
-    <main class="landing-shell">
-      <section class="hero-card">
-        <div class="hero-copy">
-          <p class="eyebrow">Maker Manuals 04</p>
-          <h1>AI-autonomie</h1>
-          <p class="lead">Onafhankelijk blijven in een wereld vol modellen, platforms en AI-tools.</p>
-          <div class="hero-actions">
-            <a class="primary-action" href="./book.html">Lees het manual</a>
-            <a class="secondary-action" href="../exports/maker-manual-04-ai-autonomie.pdf">Download PDF</a>
-            <a class="secondary-action" href="../exports/maker-manual-04-ai-autonomie.epub">Download EPUB</a>
-          </div>
-        </div>
-        <aside class="hero-note">
-          <strong>Alpha-editie 0.4</strong>
-          <span>Vroege versie in ontwikkeling. Deze uitgave wordt doorlopend aangescherpt, uitgebreid en geactualiseerd. Bewust werk in uitvoering dus, geen eindpunt.</span>
-        </aside>
-      </section>
-
-      <section class="grid">
-        <article class="tile coral">
-          <span>01</span>
-          <h2>Waar dit boek over gaat</h2>
-          <p>Een praktisch boek over hoe je AI intensief kunt gebruiken zonder je werk op te sluiten in een enkele tool, chat of leverancier.</p>
-        </article>
-
-        <article class="tile lime">
-          <span>02</span>
-          <h2>Wat je krijgt</h2>
-          <p>Een denkkader voor bronlagen, open formats, modelwissels, playbooks en een eigen werklaag boven de modellen.</p>
-        </article>
-
-        <article class="tile sky">
-          <span>03</span>
-          <h2>Wat je ermee mag</h2>
-          <p>CC BY-SA 4.0: delen, hergebruiken en bewerken mag, zolang je Erwin Blom noemt en afgeleiden onder dezelfde licentie deelt.</p>
-        </article>
-      </section>
-
-      <section class="chapter-strip">
-        <div class="chapter-head">
-          <p class="eyebrow">In dit manual</p>
-          <h2>Tien hoofdstukken</h2>
-        </div>
-        <div class="chapter-list">
-          <div>Waarom AI-autonomie ineens belangrijk is</div>
-          <div>De nieuwe afhankelijkheid</div>
-          <div>Bouw je eigen laag boven de modellen</div>
-          <div>Waarom chats geen geheugen mogen zijn</div>
-          <div>Bestanden, formats en markdown als machtsmiddel</div>
-          <div>Werken met meerdere modellen zonder gek te worden</div>
-          <div>Wat houd je zelf, wat huur je in</div>
-          <div>Je playbooks en kwaliteitslat vastleggen</div>
-          <div>Bouw een klein maar sterk model-onafhankelijk systeem</div>
-          <div>Onafhankelijk genoeg is beter dan volledig autonoom</div>
-        </div>
-      </section>
-    </main>
-  </body>
-</html>
-"""
-    INDEX_HTML.write_text(index)
+    config = load_book_content(CONTENT)
+    INDEX_HTML.write_text(render_book_index(config))
 
 
 def build_epub() -> None:
@@ -342,3 +243,4 @@ if __name__ == "__main__":
     build_book()
     build_index()
     build_epub()
+    write_manuals_source_index()
