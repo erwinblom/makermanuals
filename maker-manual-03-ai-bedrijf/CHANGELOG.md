@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-14
+
+- samengestelde manuscriptversie bijgewerkt
+
 ## 2026-06-13
 
 - projectstructuur voor `Maker Manuals 03 - Het AI-bedrijf` opgezet
